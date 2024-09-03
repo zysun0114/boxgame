@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">游戏选关</view>
+  <view class="levelBox">
+    <view class="box" wx:for="{{levels}}" bindtap="chooseLevel" data-level="{{index}}">
+      <button>第{{index+1}}关</button>
+    </view>
+  </view>
+</view>
